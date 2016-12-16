@@ -4,19 +4,23 @@ $borderGray: 0.01em solid lightgray
     margin-left: 10%
 ul
     list-style-type: none
+.bg-gray 
+    background: #EDEFED
 //menu
+.navbar
+    background: white
 .logo 
     height: 100%
 //homepage
 #homePage 
     button 
-        background: white
+        @extend .navbar
         border: $borderGray
         border-radius: 3em
         position: relative
         top: 4em
 //date picker
-.applyBtn, .cancelBtn 
+.applyBtn, .cancelBtn, #serchNavbar 
     display: none
 .form-control 
     border: none
@@ -28,12 +32,12 @@ ul
     position: relative
     bottom: 1em
     margin-left: 5%
-.findHotels
+.findHotels, 
     border-right: $borderGray
 #datePicker
     border: $borderGray
 //footer
-.footerLine 
+.grayLine 
     border-top: $borderGray
 #terminos
     height: 2em

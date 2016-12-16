@@ -14,15 +14,22 @@ $(document).ready(function(){
     $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
         $(this).val('');
     });
-    //
-    var a = $(".nav").offset().top;
+    //search in navbar
+    var a = $("#experiences").offset().top;
 
     $(document).scroll(function(){
         if($(this).scrollTop() > a)
         {   
-           $('.nav').css({"background":"red"});
+           $('#serchNavbar').css({"display":"inline"});
         } else {
-           $('.nav').css({"background":"transparent"});
+           $('#serchNavbar').css({"display":"none"});
+        }
+    });
+    //send to serch page
+    $('#textbox').keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            window.open("search.html");
         }
     });
 })
