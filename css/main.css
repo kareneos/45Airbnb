@@ -188,4 +188,12 @@ ul {
 #terminos {
   height: 2em; }
 
+#mapDiv {
+  height: 40vw;
+  position: fixed;
+  right: 0; }
+
+#map {
+  height: 100%; }
+
 /*# sourceMappingURL=main.css.map */
