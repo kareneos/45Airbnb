@@ -11,7 +11,7 @@
   </head>
 <body>
     <header>
-        <nav class="navbar navbar-fixed-top container" role="navigation">
+        <nav class="navbar navbar-fixed-top container-fluid" role="navigation">
             <div class="navbar-header">
                <a class="navbar-brand" href="#"><img src="img/airbnb_icon.png" alt="logo airbnb" class="logo"></a>
                 <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -19,6 +19,11 @@
                     <span class="glyphicon glyphicon-chevron-down"></span>
                 </button>
             </div>
+            <form class="navbar-form navbar-left" id="serchNavbar">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar" id="textbox">
+                </div>
+            </form>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" class="black">Conviértete en anfitrión</a></li>
@@ -66,7 +71,7 @@
                         <option>3 huéspedes</option>
                         <option>4 huéspedes</option>
                     </select>
-                    <button type="button" class="orangeAir white btn inl" id="SerchHotel">Buscar</button>
+                    <a href="search.html"><button type="button" class="orangeAir white btn inl" id="SerchHotel">Buscar</button></a>
                 </div>
             </div>
         </div>
@@ -100,7 +105,7 @@
     </section>
     <!--FOOTER-->
     <footer>
-        <div class="container pt-3 pb-3 footerLine">
+        <div class="container pt-3 pb-3 grayLine">
             <div class="row">
                <!--language & courrency-->
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pd-2">
@@ -146,7 +151,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row pt-3 footerLine">
+            <div class="row pt-3 grayLine">
                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                     <img src="img/airbnb_black.png" alt="logo airbnb" id="terminos">
                     <p class="inl">© Airbnb, Inc.</p>
@@ -167,7 +172,6 @@
     <!--daterangepicker-->
     <script type="text/javascript" src="js/moment.min.js"></script>
     <script type="text/javascript" src="js/daterangepicker.js"></script>
-    
     <script type="text/javascript" src="js/script.js"></script> 
 </body>
 </html>

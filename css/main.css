@@ -144,17 +144,22 @@ textarea {
 ul {
   list-style-type: none; }
 
+.bg-gray {
+  background: #EDEFED; }
+
+.navbar, #homePage button, button {
+  background: white; }
+
 .logo {
   height: 100%; }
 
 #homePage button {
-  background: white;
   border: 0.01em solid lightgray;
   border-radius: 3em;
   position: relative;
   top: 4em; }
 
-.applyBtn, .cancelBtn {
+.applyBtn, .cancelBtn, #serchNavbar {
   display: none; }
 
 .form-control {
@@ -177,10 +182,18 @@ ul {
 #datePicker {
   border: 0.01em solid lightgray; }
 
-.footerLine {
+.grayLine {
   border-top: 0.01em solid lightgray; }
 
 #terminos {
   height: 2em; }
+
+#mapDiv {
+  height: 100vw;
+  position: fixed;
+  right: 0; }
+
+#map {
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

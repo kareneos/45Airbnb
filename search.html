@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Airbnb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+<body>
+    <header>
+        <nav class="navbar navbar-fixed-top container-fluid" role="navigation">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#"><img src="img/airbnb_icon.png" alt="logo airbnb" class="logo"></a>
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+            </div>
+            <form class="navbar-form navbar-left" id="serchNavbar">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+            </form>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="black">Conviértete en anfitrión</a></li>
+                    <li><a href="#" class="black">Ayuda</a></li>
+                    <li><a href="#" class="black">Regístrate</a></li>
+                    <li><a href="#" class="black">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!--SEARCH-->
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <!--DATES-->
+                <div class="row grayLine pt-3 pb-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fechas</div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <input type="text" name="dayTrip" value="01/01/2017" class="form-control"/>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <input type="text" name="dayTrip" value="01/01/2017" class="form-control"/>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <select class="form-control">
+                            <option>1 huésped</option>
+                            <option>2 huéspedes</option>
+                            <option>3 huéspedes</option>
+                            <option>4 huéspedes</option>
+                        </select>
+                    </div>
+                </div>
+                <!--ROOM-->
+                <div class="row grayLine pt-3 pb-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Tipo de <br>habitación <i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="bg-gray pd-2"><i class="fa fa-home" aria-hidden="true"></i> Casa cantera <input type="checkbox" value="" class="pull-right"></div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="bg-gray pd-2"><i class="fa fa-home" aria-hidden="true"></i> Habitación <br>privada <input type="checkbox" value="" class="pull-right"></div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="bg-gray pd-2"><i class="fa fa-home" aria-hidden="true"></i> Habitación <br>compartida <input type="checkbox" value="" class="pull-right"></div>
+                    </div>
+                </div>
+                <!--PRICE-->
+                <div class="row grayLine pt-3 pb-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Rango de <br>precios</div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                       <img src="img/prices.PNG" alt="gráfica de precios" class="img-responsive">
+                    </div>
+                </div>
+                <!--RESERVATION-->
+                <div class="row grayLine pt-3 pb-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><i class="fa fa-bolt" aria-hidden="true"></i> Reserva <br>inmediata</div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                       <p>Anuncios que no quieren que el anfitrión acepte la solicitud.</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <input type="checkbox" checked data-toggle="toggle" data-width="100">
+                    </div>
+                </div>
+                <!--FILTER-->
+                <div class="row grayLine pt-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <button type="button" class="btn-lg">Filtros</button>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 pd-0">
+                        <p class="inl pull-right"><b>Sólo hay un 14% de alohamientos disponibles para estas fechas.</b> <br>Te recomendamos que reserves un alojamiento lo antes posible.</p>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img src="img/down.PNG" alt="calendario con flecha hacia abajo" class="img-responsive">
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Pueden aplicarse tarifas e impuestos adicionales</p>
+                    </div>
+                </div>
+                <!--RESULTS-->
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/result1.PNG" alt="fotografía de una cama" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/result2.PNG" alt="techos de casas" class="img-responsive">
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/result2.PNG" alt="techos de casas" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img src="img/result1.PNG" alt="fotografía de una cama" class="img-responsive">
+                    </div>
+                </div>
+                <!--MORE RESULTS-->
+                <div class="row pt-3">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>1-18 de Más de 300 alquileres</p>
+                    </div>
+                </div>
+            </div>
+            <!--MAP-->
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" id="mapDiv">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row grayLine pt-3 pb-3">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Estados Unidos > California > San Francisco</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--JS/JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--daterangepicker-->
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/scriptSearch.js"></script> 
+</body>
+</html>
